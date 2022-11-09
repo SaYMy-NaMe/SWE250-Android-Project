@@ -8,13 +8,13 @@
     android:orientation="vertical"
     android:background="#163143">
 
+
     <ImageView
-        android:layout_width="214dp"
-        android:layout_height="193dp"
+        android:layout_width="170dp"
+        android:layout_height="140dp"
         android:layout_gravity="center"
         android:layout_marginTop="100dp"
         android:src="@drawable/logo"></ImageView>
-
 
     <TextView
         android:layout_width="match_parent"

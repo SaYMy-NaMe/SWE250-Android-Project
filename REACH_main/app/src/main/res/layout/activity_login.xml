@@ -18,11 +18,12 @@
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:paddingTop="70dp"
             android:layout_gravity="center"
+            android:layout_marginTop="28dp"
+            android:paddingTop="7dp"
+            android:paddingBottom="20dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/logo"
-            android:paddingBottom="20dp"/>
+            android:src="@drawable/logo" />
 
         <TextView
             android:layout_width="wrap_content"
