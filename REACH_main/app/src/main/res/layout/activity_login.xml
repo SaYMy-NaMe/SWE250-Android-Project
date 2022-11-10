@@ -43,7 +43,7 @@
             android:textColorHint="#12EF1A"
             android:padding="10dp"
             android:layout_margin="10dp"
-            android:hint=" Email"
+            android:hint="Email"
             android:textColor="#000000"
             android:inputType="textEmailAddress"
             ></EditText>
@@ -54,7 +54,7 @@
             android:layout_margin="10dp"
             android:textColorHint="#12EF1A"
             android:background="#FFFFFF"
-            android:hint=" Password"
+            android:hint="Password"
             android:includeFontPadding="true"
             android:inputType="textEmailAddress"
             android:padding="10dp"
@@ -73,6 +73,7 @@
         </Button>
 
         <TextView
+            android:id="@+id/GoToSignup"
             android:layout_width="match_parent"
             android:layout_height="88dp"
             android:gravity="center"
