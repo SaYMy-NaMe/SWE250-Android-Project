@@ -38,11 +38,12 @@
         </TextView>
 
         <EditText
+            android:id="@+id/fullname"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="#FFFFFF"
-            android:hint="First Name"
+            android:hint="Full Name"
             android:includeFontPadding="true"
             android:inputType="text"
             android:padding="3dp"
@@ -51,19 +52,9 @@
 
             ></EditText>
 
+
         <EditText
-            android:layout_width="388dp"
-            android:layout_height="wrap_content"
-            android:layout_margin="10dp"
-            android:background="#FFFFFF"
-            android:hint="Last Name"
-            android:includeFontPadding="true"
-            android:inputType="text"
-            android:padding="3dp"
-            android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
-            ></EditText>
-        <EditText
+            android:id="@+id/nid"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -76,6 +67,7 @@
             android:textColorHint="#12EF1A"
             ></EditText>
         <EditText
+            android:id="@+id/address"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -89,6 +81,7 @@
             ></EditText>
 
         <EditText
+            android:id="@+id/number"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -102,6 +95,7 @@
             ></EditText>
 
         <EditText
+            android:id="@+id/email"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -114,26 +108,28 @@
             android:textColorHint="#12EF1A"
             ></EditText>
         <EditText
+            android:id="@+id/pass"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="#FFFFFF"
             android:hint="Password"
             android:includeFontPadding="true"
-            android:inputType="number"
+            android:inputType="text"
             android:padding="3dp"
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
             ></EditText>
 
         <EditText
+            android:id="@+id/confirmPass"
             android:layout_width="388dp"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
             android:background="#FFFFFF"
             android:hint="Confirm Password"
             android:includeFontPadding="true"
-            android:inputType="number"
+            android:inputType="text"
             android:padding="3dp"
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
@@ -142,6 +138,7 @@
 
 
         <Button
+            android:id="@+id/signup"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Sign Up"
