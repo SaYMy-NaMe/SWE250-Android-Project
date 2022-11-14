@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "563411796965",
-    "project_id": "reach-main-1-0",
-    "storage_bucket": "reach-main-1-0.appspot.com"
+    "project_number": "209083794151",
+    "project_id": "reach-auth-b96b9",
+    "storage_bucket": "reach-auth-b96b9.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:563411796965:android:aea4deed14a49c6d25650c",
+        "mobilesdk_app_id": "1:209083794151:android:407a757d0f8324f6e8d842",
         "android_client_info": {
           "package_name": "com.hafiz.reach_main_10"
         }
       },
       "oauth_client": [
         {
-          "client_id": "563411796965-4rf2t5d6egcrstv6dorvq64cd3dk4gg9.apps.googleusercontent.com",
+          "client_id": "209083794151-r0aubv5vk83rbs1fodjam666rtelkgn0.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAm_MZGi9QCqBznrys5uh4vd9SVoO54DMg"
+          "current_key": "AIzaSyByxGNrN4HLMoEmljZGcMT7mb3fB_rTIfM"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "563411796965-4rf2t5d6egcrstv6dorvq64cd3dk4gg9.apps.googleusercontent.com",
+              "client_id": "209083794151-r0aubv5vk83rbs1fodjam666rtelkgn0.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

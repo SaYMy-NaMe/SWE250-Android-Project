@@ -10,29 +10,34 @@
 
 
     <ImageView
-        android:layout_width="170dp"
-        android:layout_height="140dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/logo"></ImageView>
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="1dp"
+        android:src="@drawable/logo">
+
+    </ImageView>
+
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
-        android:textColor="#12EF1A"
-        android:text="WELCOME!!"
-        android:gravity="center"
-        android:textSize="40dp"
-        ></TextView>
-    <Button
-        android:id="@+id/nextbutton"
-        android:layout_marginTop="90dp"
-        android:layout_width="150dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Next"
-        ></Button>
+        android:layout_marginTop="60dp"
+        android:textSize="45dp"
+        android:text=" Wlcome to REACH "
+        ></TextView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textSize="40dp"
+        android:text="Hire as you Desire  "
+        ></TextView>
+
+
+
 
 
 
