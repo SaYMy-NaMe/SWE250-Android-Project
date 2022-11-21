@@ -24,19 +24,19 @@
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
         android:textSize="45dp"
-        android:text=" Wlcome to REACH "
+        android:text=" Welcome to REACH "
         ></TextView>
+
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginTop="60dp"
-        android:textSize="40dp"
-        android:text="Hire as you Desire  "
+        android:textSize="45dp"
+        android:text="................... "
         ></TextView>
-
-
 
 
 
