@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".welcomeActivity"
     android:orientation="vertical"
-    android:background="#163143">
+    android:background="#163143" >
 
 
     <ImageView
@@ -15,30 +15,23 @@
         android:layout_marginTop="1dp"
         android:src="@drawable/logo">
 
+
     </ImageView>
 
-
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:textSize="45dp"
-        android:text=" Wlcome to REACH "
-        ></TextView>
+        android:layout_width="match_parent"
+        android:layout_height="73dp"
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:textSize="40dp"
-        android:text="Hire as you Desire  "
-        ></TextView>
+        android:text="Welcome , Mr Karim, What are you looking for?"
+        android:textSize="20dp"
 
+        >
 
+    </TextView>
 
+        
 
+    </LinearLayout>
 
 
 
