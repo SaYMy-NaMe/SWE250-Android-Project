@@ -195,9 +195,11 @@
 
 
     </LinearLayout>
+
     <TextView
         android:layout_width="411dp"
         android:layout_height="wrap_content"
+
         android:background="@color/black"
         android:text="Hot Deals!!"
         android:textColor="#02A596"
@@ -330,10 +332,6 @@
 
 
     </LinearLayout>
-
-
-
-
 
 
 
