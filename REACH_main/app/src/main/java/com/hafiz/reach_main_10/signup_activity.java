@@ -21,17 +21,17 @@ import java.util.regex.Pattern;
 
 public class signup_activity extends AppCompatActivity {
 
-    private EditText editFUllname, editNID, editAddress, editCont, editEmail, editPass;
+    private EditText editFUllname, editNID, editAddress, editCont, editEmail, editPass; // Variabels for Taking Input from signup Form
     Button b ;
-    private FirebaseAuth mAuth;
+    private FirebaseAuth mAuth; // Reference to FireBase
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_signup);
-        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance(); // Initiate Firbase Connection
 
-        b = findViewById(R.id.signup);
-        editFUllname = findViewById(R.id.fullname);
+        b = findViewById(R.id.signup); // Connect to Signup Button
+        editFUllname = findViewById(R.id.fullname); // Connect to SignUp Form Inputs
         editNID = findViewById(R.id.nid);
         editAddress = findViewById(R.id.address);
         editCont = findViewById(R.id.number);
@@ -51,7 +51,7 @@ public class signup_activity extends AppCompatActivity {
     }
 
     private void registerListener() {
-        String fullname = editFUllname.getText().toString().trim();
+        String fullname = editFUllname.getText().toString().trim(); // Get Text From the Form and Store it in The variables declared Before, Trim for Avoiding Space input
         String nID = editNID.getText().toString().trim();
         String address = editAddress.getText().toString().trim();
         String contact = editCont.getText().toString().trim();
@@ -60,11 +60,11 @@ public class signup_activity extends AppCompatActivity {
 
         if(fullname.isEmpty())
         {
-            editFUllname.setError("Full Name is Required");
-            editFUllname.requestFocus();
+            editFUllname.setError("Full Name is Required"); // Incase of Wrong Input , Give a message to the users.
+            editFUllname.requestFocus();// Focus on the input
             return;
         }
-        if(nID.isEmpty())
+        if(nID.isEmpty())// Same
         {
             editFUllname.setError("NID number is Required");
             editNID.requestFocus();
@@ -108,20 +108,20 @@ public class signup_activity extends AppCompatActivity {
         }
 
         mAuth.createUserWithEmailAndPassword(email,pass)
-                .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                .addOnCompleteListener(new OnCompleteListener<AuthResult>() { // Store the inputed data On Firebase
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if(task.isSuccessful())
                         {
-                            User user = new User(fullname,address,nID,contact,email);
-                            FirebaseDatabase.getInstance().getReference("Users")
+                            User user = new User(fullname,address,nID,contact,email); // Passing all the Data as USER OBject on Firebase
+                            FirebaseDatabase.getInstance().getReference("Users") // Getting The Storing Address
                                     .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
-                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() {
+                                    .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() { // Passing 'user' on SetValue() Method
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if(task.isSuccessful())
                                             {
-                                                Toast.makeText(signup_activity.this, "Signup Scuccesfull",Toast.LENGTH_LONG).show();
+                                                Toast.makeText(signup_activity.this, "Signup Scuccesfull",Toast.LENGTH_LONG).show();// Giving Signup Success Full Messaage
 
                                             }
                                             else
@@ -130,7 +130,7 @@ public class signup_activity extends AppCompatActivity {
                                             }
                                         }
                                     });
-                            startActivity(new Intent(signup_activity.this,login_activity.class));
+                            startActivity(new Intent(signup_activity.this,login_activity.class));// Advancing to the login Page again after Successful Signup
 
                         }
                         else

@@ -14,6 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
+        <!--            logo-->
 
         <ImageView
             android:layout_width="wrap_content"
@@ -24,6 +25,8 @@
             android:paddingBottom="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/logo" />
+
+        <!--            Signup text-->
 
         <TextView
             android:layout_width="wrap_content"
@@ -36,6 +39,8 @@
             android:textSize="20dp">
 
         </TextView>
+
+        <!--            FULLNAME INPUT-->
 
         <EditText
             android:id="@+id/fullname"
@@ -52,6 +57,7 @@
 
             ></EditText>
 
+        <!--             INPUT-->
 
         <EditText
             android:id="@+id/nid"
@@ -65,7 +71,12 @@
             android:padding="3dp"
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
-            ></EditText>
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
         <EditText
             android:id="@+id/address"
             android:layout_width="388dp"
@@ -79,6 +90,8 @@
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
             ></EditText>
+
+        <!--             INPUT-->
 
         <EditText
             android:id="@+id/number"
@@ -94,6 +107,8 @@
             android:textColorHint="#12EF1A"
             ></EditText>
 
+        <!--             INPUT-->
+
         <EditText
             android:id="@+id/email"
             android:layout_width="388dp"
@@ -106,7 +121,12 @@
             android:padding="3dp"
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
-            ></EditText>
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
         <EditText
             android:id="@+id/pass"
             android:layout_width="388dp"
@@ -119,7 +139,11 @@
             android:padding="3dp"
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
-            ></EditText>
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
 
         <EditText
             android:id="@+id/confirmPass"
@@ -133,7 +157,11 @@
             android:padding="3dp"
             android:textColor="#37196E"
             android:textColorHint="#12EF1A"
-            ></EditText>
+            >
+
+        </EditText>
+
+        <!--             SIGNPU BUTTON -->
 
 
 
