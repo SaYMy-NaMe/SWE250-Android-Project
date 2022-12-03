@@ -224,7 +224,34 @@
         </TextView>
 
 
+<<<<<<< HEAD
         <!--    Second Row-->
+=======
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="411dp"
+        android:layout_height="wrap_content"
+
+        android:background="@color/black"
+        android:text="Hot Deals!!"
+        android:textColor="#02A596"
+        android:textSize="35dp"
+
+        >
+
+    </TextView>
+
+
+    <!--    Second Row-->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+>>>>>>> 1ba3b50de3adb651945a405c07744addd044c4b9
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -362,4 +389,10 @@
     </LinearLayout>
 
 
+<<<<<<< HEAD
 </ScrollView>
+=======
+
+
+</LinearLayout>
+>>>>>>> 1ba3b50de3adb651945a405c07744addd044c4b9
