@@ -6,39 +6,332 @@
     android:layout_height="match_parent"
     tools:context=".welcomeActivity"
     android:orientation="vertical"
-    android:background="#163143">
+    android:background="#163143" >
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            >
+
+            <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="1dp"
+            android:src="@drawable/logo">
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/search_bar"
+                >
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/menu_icon"
+                >
+
+            </ImageView>
 
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:layout_marginTop="1dp"
-        android:src="@drawable/logo">
 
-    </ImageView>
+        </LinearLayout>
 
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="73dp"
+
+                android:text="Welcome , Mr Karim, What are you looking for?"
+                android:textSize="20dp"
+
+                >
+
+            </TextView>
+
+        <!--    First Row-->
+
+            <TextView
+                android:layout_width="411dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:text="Trending Now!!"
+                android:textColor="#02A596"
+                android:textSize="35dp"
+
+                >
+
+                </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:background="#5F785E"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:src="@drawable/plumber">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:text="    Plumbing">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:text="    300 Taka/hour\n    5 Star Rated"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:background="#5C607A"
+            android:orientation="vertical"
+
+
+            >
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:src="@drawable/car_washer">
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:text=" Car Washing"
+
+                >
+
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:text="    400 Taka/hour\n    5 Star Rated"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:background="#5F785E"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:src="@drawable/car_repairing">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="12dp"
+                android:textSize="20dp"
+                android:text=" Car Repairing">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:text="    500 Taka/hour\n    4 Star Rated"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="411dp"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:textSize="45dp"
-        android:text=" Welcome to REACH "
-        ></TextView>
+
+        android:background="@color/black"
+        android:text="Hot Deals!!"
+        android:textColor="#02A596"
+        android:textSize="35dp"
+
+        >
+
+    </TextView>
 
 
+    <!--    Second Row-->
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="60dp"
-        android:textSize="45dp"
-        android:text="................... "
-        ></TextView>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="233dp"
+        android:background="@drawable/rectangle"
+        android:orientation="horizontal">
 
 
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:background="#5C607A"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:src="@drawable/delivery_man">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:text=" Delivey Man">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:text=" 200 Taka/Delivery\n    5 Star Rated"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:background="#5F785E"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:src="@drawable/tour_guide">
+
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:text="  Tour Guide"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:text="    200 Taka/hour\n    5 Star Rated"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="222dp"
+            android:background="#5C607A"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="135dp"
+                android:layout_height="124dp"
+                android:layout_marginTop="0dp"
+                android:padding="5dp"
+                android:src="@drawable/ac_repairing">
+
+            </ImageView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginTop="10dp"
+                android:textSize="22dp"
+                android:text=" Ac Repairing">
+
+            </TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="49dp"
+                android:layout_marginLeft="15dp"
+                android:text="    500 Taka/hour\n    4 Star Rated"
+
+                >
+
+            </TextView>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
 
 
 
