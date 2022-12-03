@@ -26,10 +26,10 @@ import java.util.PrimitiveIterator;
 public class login_activity extends AppCompatActivity {
 
     private TextView tb ;
-    private EditText edtEmail , editPass;
+    private EditText edtEmail , editPass;// Input
     private Button logIn;
-    private ProgressBar pr;
-    private FirebaseAuth mAuth;
+    private ProgressBar pr; // Will be used Later
+    private FirebaseAuth mAuth;// Firebase Reference
 
 
     @SuppressLint("MissingInflatedId")
@@ -38,7 +38,7 @@ public class login_activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        mAuth = FirebaseAuth.getInstance();
+        mAuth = FirebaseAuth.getInstance(); // Firebase Initialization
         tb = findViewById(R.id.GoToSignup);
         logIn = findViewById(R.id.lo);
         edtEmail = findViewById(R.id.emaiL);
@@ -47,7 +47,7 @@ public class login_activity extends AppCompatActivity {
 
 
 
-        tb.setOnClickListener(new View.OnClickListener() {
+        tb.setOnClickListener(new View.OnClickListener() { // If USer do not Have account , Go to Signup Page
             @Override
             public void onClick(View view) {
                 Intent in = new Intent(login_activity.this , signup_activity.class);
@@ -58,8 +58,9 @@ public class login_activity extends AppCompatActivity {
 
         logIn.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                user_login();
+            public void onClick(View view)
+            {
+                user_login(); // If Already Have account or After SignUp
             }
         });
 
@@ -67,16 +68,16 @@ public class login_activity extends AppCompatActivity {
     }
 
     private void user_login() {
-        String email = edtEmail.getText().toString().trim();
-        String pass = editPass.getText().toString().trim();
+        String email = edtEmail.getText().toString().trim(); // User Input Email
+        String pass = editPass.getText().toString().trim();// USer input Password
 
         if(email.isEmpty())
         {
-            edtEmail.setError("Email is Required");
+            edtEmail.setError("Email is Required"); // Give message to user after incorrect mail
             edtEmail.requestFocus();
             return;
         }
-        if( !Patterns.EMAIL_ADDRESS.matcher(email).matches())
+        if( !Patterns.EMAIL_ADDRESS.matcher(email).matches())// input format should be like an Email
         {
             edtEmail.setError("Please input a valid Email");
             edtEmail.requestFocus();
@@ -99,7 +100,7 @@ public class login_activity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())
                 {
-                    startActivity(new Intent(login_activity.this,homepage.class));
+                    startActivity(new Intent(login_activity.this,homepage_activity.class)); // Login Success , Advance to The Homepage
                 }
                 else
                 {

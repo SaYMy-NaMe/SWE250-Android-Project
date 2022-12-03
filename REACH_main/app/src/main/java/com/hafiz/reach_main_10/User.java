@@ -2,6 +2,7 @@ package com.hafiz.reach_main_10;
 
 public class User {
 
+    // User Object to Get the data from Signup
     public String fullname , address, Nid, contact, email;
 
     public User()

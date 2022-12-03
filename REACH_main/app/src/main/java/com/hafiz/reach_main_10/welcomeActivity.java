@@ -14,12 +14,12 @@ public class welcomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_welcome);
 
-        Button b = findViewById(R.id.nextbutton);
+        Button b = findViewById(R.id.nextbutton); // Connect The Next Button in The Welcome Page
 
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(welcomeActivity.this , login_activity.class);
+                Intent in = new Intent(welcomeActivity.this , login_activity.class); // Go to Login Page
                 startActivity(in);
             }
         });

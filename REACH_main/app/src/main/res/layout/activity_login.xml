@@ -14,7 +14,7 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-
+        <!--            Logo -->
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -24,6 +24,8 @@
             android:paddingBottom="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/logo" />
+
+        <!--            Login -->
 
         <TextView
             android:layout_width="wrap_content"
@@ -37,6 +39,8 @@
 
         </TextView>
 
+        <!--            Email Input-->
+
         <EditText
             android:id="@+id/emaiL"
             android:layout_width="match_parent"
@@ -48,6 +52,8 @@
             android:hint="Email"
             android:textColor="#000000"
             android:inputType="textEmailAddress" />
+
+        <!--            Password Input-->
 
         <EditText
             android:id="@+id/pasS"
@@ -64,6 +70,8 @@
 
             />
 
+        <!--            login Button-->
+
         <Button
             android:id="@+id/lo"
             android:layout_width="match_parent"
@@ -74,7 +82,7 @@
             >
 
         </Button>
-
+        <!--        go to  SignUp Text-->
         <TextView
             android:id="@+id/GoToSignup"
             android:layout_width="match_parent"
