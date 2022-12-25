@@ -16,28 +16,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Plumbing"
+            android:text="Your Profile"
             android:textSize="30dp"
 
             android:background="@drawable/rectangle"
 
-             >
-
-        </TextView>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="left"
-            android:text="Personal Details"
-            android:textSize="20dp"
-            android:layout_marginTop="5dp"
-            android:padding="10dp"
-
-            android:background="@color/black"
-
             >
 
         </TextView>
+
 
         <ImageView
             android:layout_width="match_parent"
@@ -63,9 +50,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
+            android:layout_gravity="center"
             >
             <Button
-                android:id="@+id/back1"
+                android:id="@+id/back2"
                 android:layout_width="130dp"
                 android:layout_height="wrap_content"
                 android:text="back"
@@ -74,22 +62,7 @@
                 >
 
             </Button>
-            <Button
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:text="Chat"
-                android:layout_margin="5dp"
-                >
 
-            </Button>
-            <Button
-                android:layout_width="130dp"
-                android:layout_height="wrap_content"
-                android:text="COnfirm"
-                android:layout_margin="5dp"
-                >
-
-            </Button>
 
         </LinearLayout>
 

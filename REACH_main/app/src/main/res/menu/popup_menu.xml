@@ -2,23 +2,33 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:id="@+id/item1"
-        android:title="item1"
+    <item android:id="@+id/profile"
+        android:title="My Profile"
         >
 
     </item>
-    <item android:id="@+id/item2"
-        android:title="item2"
+    <item android:id="@+id/settings"
+        android:title="Settings"
         >
 
     </item>
-    <item android:id="@+id/item3"
-        android:title="item3"
+    <item android:id="@+id/history"
+        android:title="Purchase History"
         >
 
     </item>
-    <item android:id="@+id/item4"
-        android:title="item4"
+    <item android:id="@+id/cart"
+        android:title="My Cart"
+        >
+    </item>
+
+    <item android:id="@+id/aboutUs"
+        android:title="About US"
+        >
+    </item>
+
+    <item android:id="@+id/logout"
+        android:title="logout"
         >
     </item>
 </menu>

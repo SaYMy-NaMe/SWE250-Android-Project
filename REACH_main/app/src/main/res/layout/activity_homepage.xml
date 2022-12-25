@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
     android:fillViewport="true"
     android:padding="5dp"
     xmlns:android="http://schemas.android.com/apk/res/android">
 
     <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
         tools:context=".welcomeActivity"
         android:orientation="vertical"
         android:background="#163143" >
@@ -17,43 +17,16 @@
         <!--        initial logo, SearchBar, menu Image-->
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-
-            >
-
-            <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_marginTop="1dp"
-                android:src="@drawable/logo">
-            </ImageView>
-
-            <ImageView
-                android:layout_width="198dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/search_bar"
-                >
-
-            </ImageView>
-
-            <ImageView
-
-                android:layout_width="104dp"
-                android:layout_height="match_parent"
-                android:src="@drawable/menu_icon">
-
-            </ImageView>
+            android:layout_width="fill_parent"
+            android:layout_height="38dp"
 
 
-
-        </LinearLayout>
+            ></LinearLayout>
 
         <!--        Welcome text-->
 
         <TextView
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="73dp"
 
             android:text="Welcome , Mr Karim, What are you looking for?"
@@ -66,7 +39,7 @@
         <!--    First Row-->
 
         <TextView
-            android:layout_width="411dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/black"
             android:text="Trending Now!!"
@@ -78,7 +51,7 @@
         </TextView>
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="230dp"
             android:background="@drawable/rectangle"
             android:orientation="horizontal">
@@ -93,11 +66,14 @@
                 android:orientation="vertical">
 
                 <ImageView
+                    android:id="@+id/plunmbing"
                     android:layout_width="135dp"
                     android:layout_height="124dp"
                     android:layout_marginTop="0dp"
                     android:padding="5dp"
-                    android:src="@drawable/plumber">
+                    android:src="@drawable/plumber"
+
+                    >
 
                 </ImageView>
 
@@ -178,7 +154,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="135dp"
+                    android:layout_width="match_parent"
                     android:layout_height="124dp"
                     android:layout_marginTop="0dp"
                     android:padding="5dp"
@@ -210,8 +186,9 @@
 
 
         </LinearLayout>
+
         <TextView
-            android:layout_width="411dp"
+            android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:background="@color/black"
             android:text="Hot Deals!!"
@@ -226,7 +203,7 @@
         <!--    Second Row-->
 
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="fill_parent"
             android:layout_height="233dp"
             android:background="@drawable/rectangle"
             android:orientation="horizontal">
@@ -249,7 +226,7 @@
                 </ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="49dp"
                     android:layout_marginTop="10dp"
                     android:textSize="22dp"
@@ -258,7 +235,7 @@
                 </TextView>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="49dp"
                     android:layout_marginLeft="15dp"
                     android:text=" 200 Taka/Delivery\n    5 Star Rated"
@@ -289,14 +266,14 @@
                 </ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="49dp"
                     android:layout_marginTop="10dp"
                     android:textSize="22dp"
                     android:text="  Tour Guide"></TextView>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="49dp"
                     android:layout_marginLeft="15dp"
                     android:text="    200 Taka/hour\n    5 Star Rated"
@@ -317,7 +294,7 @@
                 android:orientation="vertical">
 
                 <ImageView
-                    android:layout_width="135dp"
+                    android:layout_width="fill_parent"
                     android:layout_height="124dp"
                     android:layout_marginTop="0dp"
                     android:padding="5dp"
@@ -326,7 +303,7 @@
                 </ImageView>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="49dp"
                     android:layout_marginTop="10dp"
                     android:textSize="22dp"
@@ -335,7 +312,7 @@
                 </TextView>
 
                 <TextView
-                    android:layout_width="match_parent"
+                    android:layout_width="fill_parent"
                     android:layout_height="49dp"
                     android:layout_marginLeft="15dp"
                     android:text="    500 Taka/hour\n    4 Star Rated"
@@ -361,4 +338,4 @@
     </LinearLayout>
 
 
-</ScrollView>
+</RelativeLayout>
