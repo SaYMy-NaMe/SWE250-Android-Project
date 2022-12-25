@@ -7,22 +7,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class plumbing_activity extends AppCompatActivity {
+public class profile_activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_plumbing);
+        setContentView(R.layout.activity_profile);
 
-        Button b = findViewById(R.id.back1);
-
+        Button b = findViewById(R.id.back2);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(plumbing_activity.this, homepage_activity.class);
-                startActivity(in);
+                startActivity(new Intent(profile_activity.this, homepage_activity.class));
             }
         });
-
     }
 }
