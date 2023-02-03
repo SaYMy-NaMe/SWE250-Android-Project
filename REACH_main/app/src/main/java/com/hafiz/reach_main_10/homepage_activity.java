@@ -39,9 +39,9 @@ public class homepage_activity extends AppCompatActivity {
             startActivity(new Intent(homepage_activity.this, profile_activity.class));
 
         }
-        if(id == R.id.profile)
+        if(id == R.id.aboutUs)
         {
-
+            startActivity(new Intent(homepage_activity.this, aboutUs_activity.class));
         }
         return true;
     }
