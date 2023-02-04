@@ -22,6 +22,7 @@
     <EditText
         android:id="@+id/editTextTextPassword"
         android:layout_width="334dp"
+        android:text="Hey This is Ashraf"
         android:layout_height="75dp"
         android:layout_weight="1"
         android:ems="10"
