@@ -119,7 +119,7 @@ public class signup_activity extends AppCompatActivity {
                                     .setValue(user).addOnCompleteListener(new OnCompleteListener<Void>() { // Passing 'user' on SetValue() Method
                                         @Override
                                         public void onComplete(@NonNull Task<Void> task) {
-                                            if(task.isSuccessful())
+                                            if(!task.isSuccessful())
                                             {
                                                 Toast.makeText(signup_activity.this, "Signup Scuccesfull",Toast.LENGTH_LONG).show();// Giving Signup Success Full Messaage
 

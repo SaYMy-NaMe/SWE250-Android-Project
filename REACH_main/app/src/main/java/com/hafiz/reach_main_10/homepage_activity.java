@@ -13,6 +13,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.SearchView;
 import android.widget.Toast;
 
 import java.util.logging.Logger;
@@ -24,8 +25,28 @@ public class homepage_activity extends AppCompatActivity {
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
 
+        // for Menu Option
+
         MenuInflater mi = getMenuInflater();
         mi.inflate(R.menu.popup_menu,menu);
+
+        // for Search Option
+//        MenuItem menuItem = menu.findItem(R.id.search);
+//        SearchView searchView = (SearchView) menuItem.getActionView();
+//        searchView.setQueryHint("Search Here");
+
+//        searchView.setOnQueryTextListener(new SearchView.OnQueryTextListener() {
+//            @Override
+//            public boolean onQueryTextSubmit(String query) {
+//                return true;
+//            }
+//
+//            @Override
+//            public boolean onQueryTextChange(String newText) {
+//                return true;
+//            }
+//        });
+
         return true;
     }
 
@@ -56,13 +77,33 @@ public class homepage_activity extends AppCompatActivity {
 
 
 
-        ImageView im = findViewById(R.id.plunmbing);
+        ImageView im1 = findViewById(R.id.plunmbing);
 
 
-        im.setOnClickListener(new View.OnClickListener() {
+
+
+
+        im1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent in = new Intent(homepage_activity.this , plumbing_activity.class);
+                startActivity(in);
+            }
+        });
+                ImageView im2 = findViewById(R.id.carWashing);
+        im2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in =  new Intent(homepage_activity.this , CarWash.class);
+                startActivity(in);
+            }
+        });
+
+        ImageView im3 = findViewById(R.id.carRepairing);
+        im3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(homepage_activity.this , car_repairing_activity.class);
                 startActivity(in);
             }
         });
