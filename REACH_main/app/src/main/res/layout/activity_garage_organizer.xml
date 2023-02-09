@@ -23,7 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Garage Organizer"
+                android:text="Car Repairing"
                 android:textSize="30dp"
 
                 android:background="@drawable/rectangle"
