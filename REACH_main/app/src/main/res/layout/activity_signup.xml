@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login_activity"
-    android:background="#163143"
+    android:background="#9898dd"
 
     >
 
@@ -35,8 +35,8 @@
 
             android:fontFamily="sans-serif-light"
             android:text="SIGN UP"
-            android:textColor="#12EF1A"
-            android:textSize="20dp">
+            android:textColor="#141414"
+            android:textSize="25dp">
 
         </TextView>
 
@@ -52,7 +52,7 @@
             android:includeFontPadding="true"
             android:inputType="text"
             android:padding="3dp"
-            android:textColor="#37196E"
+            android:textColor="#9acd32"
             android:textColorHint="#12EF1A"
 
             ></EditText>
@@ -92,6 +92,25 @@
             ></EditText>
 
         <!--             INPUT-->
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/caddress"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Currently Available Addresss"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#12EF1A"
+            ></EditText>
+
+        <!--             INPUT-->
+
+        <!--             INPUT-->
 
         <EditText
             android:id="@+id/number"
@@ -104,10 +123,7 @@
             android:inputType="number"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
-            ></EditText>
-
-        <!--             INPUT-->
+            android:textColorHint="#12EF1A"></EditText>
 
         <EditText
             android:id="@+id/email"
