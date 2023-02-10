@@ -4,11 +4,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class ExerciseEquipmentInstallerActivity extends AppCompatActivity {
+public class GymEquipmentInstallerActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exercise_equipment_installer);
+        setContentView(R.layout.activity_gym_equipment_installer);
     }
 }
