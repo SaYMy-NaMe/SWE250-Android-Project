@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".login_activity"
-    android:background="#163143"
+    android:background="@drawable/login4"
 
     >
 
@@ -19,8 +19,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:layout_marginTop="28dp"
-            android:paddingTop="7dp"
+            android:layout_marginTop="40dp"
+            android:paddingTop="15dp"
             android:paddingBottom="20dp"
             android:scaleType="centerCrop"
             android:src="@drawable/logo" />
@@ -34,8 +34,8 @@
             android:layout_marginTop="20dp"
             android:fontFamily="sans-serif-light"
             android:text="LOG IN "
-            android:textColor="#12EF1A"
-            android:textSize="20dp">
+            android:textColor="#f2f5df"
+            android:textSize="30dp">
 
         </TextView>
 
@@ -46,11 +46,11 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:background="#FFFFFF"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             android:padding="10dp"
             android:layout_margin="10dp"
             android:hint="Email"
-            android:textColor="#000000"
+            android:textColor="#080808"
             android:inputType="textEmailAddress" />
 
         <!--            Password Input-->
@@ -64,7 +64,7 @@
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_margin="10dp"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             android:background="#FFFFFF"
             android:hint="Password"
             android:includeFontPadding="true"
@@ -90,7 +90,8 @@
             android:layout_height="88dp"
             android:gravity="center"
             android:text="Do not have any account? Sign up"
-            android:textColor="#12EF1A"
+            android:textColor="#abc1fd"
+            android:textStyle="italic"
             android:textSize="20dp">
 
         </TextView>
