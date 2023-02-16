@@ -16,14 +16,14 @@
 
         <!--            Logo -->
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
             android:layout_gravity="center"
             android:layout_marginTop="40dp"
             android:paddingTop="15dp"
             android:paddingBottom="20dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logofinal" />
 
         <!--            Login -->
 
@@ -45,8 +45,9 @@
             android:id="@+id/emaiL"
             android:layout_width="match_parent"
             android:layout_height="40dp"
-            android:background="#FFFFFF"
+            android:background="@drawable/rr3"
             android:textColorHint="#080808"
+            android:textAlignment="center"
             android:padding="10dp"
             android:layout_margin="10dp"
             android:hint="Email"
@@ -65,20 +66,22 @@
             android:layout_height="40dp"
             android:layout_margin="10dp"
             android:textColorHint="#080808"
-            android:background="#FFFFFF"
+            android:background="@drawable/rr3"
             android:hint="Password"
             android:includeFontPadding="true"
             android:padding="10dp"
             android:textColor="#37196E"
+            android:textAlignment="center"
             android:ems="10"
             android:inputType="textPassword" />
 
         <Button
             android:id="@+id/lo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
             android:text="Log In"
             android:padding="10dp"
+            android:background="@drawable/rr3"
             android:layout_margin="10dp"
             >
 
@@ -90,8 +93,8 @@
             android:layout_height="88dp"
             android:gravity="center"
             android:text="Do not have any account? Sign up"
-            android:textColor="#abc1fd"
-            android:textStyle="italic"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
             android:textSize="20dp">
 
         </TextView>
