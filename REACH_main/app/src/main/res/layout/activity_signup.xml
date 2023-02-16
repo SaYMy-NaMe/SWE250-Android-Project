@@ -17,14 +17,14 @@
         <!--            logo-->
 
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="100dp"
+            android:layout_height="110dp"
             android:layout_gravity="center"
             android:layout_marginTop="28dp"
             android:paddingTop="7dp"
             android:paddingBottom="20dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/logo" />
+            android:src="@drawable/logofinal" />
 
         <!--            Signup text-->
 
@@ -52,8 +52,8 @@
             android:includeFontPadding="true"
             android:inputType="text"
             android:padding="3dp"
-            android:textColor="#9acd32"
-            android:textColorHint="#12EF1A"
+            android:textColor="#080808"
+            android:textColorHint="#080808"
 
             ></EditText>
 
@@ -70,7 +70,7 @@
             android:inputType="number"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             >
 
         </EditText>
@@ -88,7 +88,7 @@
             android:inputType="text"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             ></EditText>
 
         <!--             INPUT-->
@@ -105,7 +105,7 @@
             android:inputType="text"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             ></EditText>
 
         <!--             INPUT-->
@@ -123,7 +123,7 @@
             android:inputType="number"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"></EditText>
+            android:textColorHint="#080808"></EditText>
 
         <EditText
             android:id="@+id/email"
@@ -136,7 +136,7 @@
             android:inputType="textEmailAddress"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             >
 
         </EditText>
@@ -154,7 +154,7 @@
             android:inputType="text"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             >
 
         </EditText>
@@ -172,7 +172,7 @@
             android:inputType="text"
             android:padding="3dp"
             android:textColor="#37196E"
-            android:textColorHint="#12EF1A"
+            android:textColorHint="#080808"
             >
 
         </EditText>
