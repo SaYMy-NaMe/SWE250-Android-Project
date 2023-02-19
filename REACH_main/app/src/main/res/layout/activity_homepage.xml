@@ -1,347 +1,37 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical">
-
-    <ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:background="@drawable/logoback1">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        ></LinearLayout>
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#163143"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView4">
-
-        <LinearLayout
+        android:layout_height="wrap_content"
+        >
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-
-            <!--        initial logo, SearchBar, menu Image-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="38dp"
-
-
-                >
-
-            </LinearLayout>
-
-            <!--        Welcome text-->
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="73dp"
-
-                android:text="Welcome , Mr Karim, What are you looking for?"
-                android:textSize="20dp"
-
-                >
-
-            </TextView>
-
-            <!--    First Row-->
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/black"
-                android:text="Trending Now!!"
-                android:textColor="#02A596"
-                android:textSize="35dp"
-
-                >
-
-            </TextView>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="248dp"
-                android:background="@drawable/rectangle"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-
-                <!--            First Image- Plumbing-->
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#5F785E"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/plunmbing"
-                        android:layout_width="125dp"
-                        android:layout_height="124dp"
-
-                        android:src="@drawable/plumber"
-
-                        >
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="44dp"
-                        android:layout_marginTop="10dp"
-                        android:text="    Plumbing"
-                        android:textSize="18dp">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="49dp"
-                        android:layout_marginLeft="10dp"
-
-                        android:text=" 300 Taka/hour\n    5 Star Rated"
-
-                        >
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-                <!--            Second Image Car Washing-->
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    android:background="#5C607A"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/carWashing"
-                        android:layout_width="125dp"
-                        android:layout_height="124dp"
-
-
-                        android:src="@drawable/car_washer">
-
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginTop="10dp"
-                        android:text="   Car Washing"
-                        android:textSize="18dp"
-
-                        >
-
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginLeft="10dp"
-                        android:text="    400 Taka/hour\n    5 Star Rated"
-
-                        >
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-                <!--            3rd Image -Car Repairing-->
-
-                <LinearLayout
-                    android:layout_width="fill_parent"
-                    android:layout_height="248dp"
-                    android:layout_weight="1"
-                    android:background="#5F785E"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:id="@+id/carRepairing"
-                        android:layout_width="125dp"
-                        android:layout_height="124dp"
-
-                        android:src="@drawable/car_repairing">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="49dp"
-                        android:layout_marginTop="12dp"
-                        android:text=" Car Repairing"
-                        android:textSize="18dp">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="   500 Taka/hour\n    4 Star Rated"
-
-                        >
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-
-
-
-            </LinearLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/black"
-                android:text="Hot Deals!!"
-                android:textColor="#02A596"
-                android:textSize="35dp"
-
-                >
-
-            </TextView>
-
-
-            <!--    Second Row-->
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="241dp"
-                android:background="@drawable/rectangle"
-                android:orientation="horizontal"
-                android:weightSum="3">
-
-                <!--            1st Image -Car Delivery Man-->
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="240dp"
-                    android:layout_weight="1"
-                    android:background="#5C607A"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="124dp"
-                        android:src="@drawable/delivery_man">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginTop="10dp"
-                        android:text=" Delivey Man"
-                        android:textSize="18dp">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginLeft="10dp"
-                        android:text=" 200 Taka/Delivery\n    5 Star Rated"
-
-                        >
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-                <!--            2nd Image -Car Tour guide-->
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="241dp"
-                    android:layout_weight="1"
-                    android:background="#5F785E"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="124dp"
-                        android:src="@drawable/tour_guide">
-
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginTop="10dp"
-                        android:text="  Tour Guide"
-                        android:textSize="18dp">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="  200 Taka/hour\n    5 Star Rated"
-
-                        >
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-                <!--            3rd Image - Ac Repairing-->
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="241dp"
-                    android:layout_weight="1"
-                    android:background="#5C607A"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="125dp"
-                        android:layout_height="124dp"
-                        android:src="@drawable/ac_repairing">
-
-                    </ImageView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginTop="10dp"
-                        android:text="  Ac Repairing"
-                        android:textSize="18dp">
-
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="49dp"
-                        android:layout_marginLeft="10dp"
-                        android:text="  500 Taka/hour\n    4 Star Rated"
-
-                        >
-
-                    </TextView>
-
-
-                </LinearLayout>
-
-
-            </LinearLayout>
-
-
-        </LinearLayout>
-    </ScrollView>
+            android:text="Hello Ashraf , What are you looking for?"
+            android:textSize="24dp"
+            android:textColor="@color/white"
+            ></TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:listitem="@layout/sample_recycler_view" />
 
     <androidx.coordinatorlayout.widget.CoordinatorLayout
         android:layout_width="match_parent"
-        android:layout_height="70dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         app:layout_constraintBottom_toBottomOf="@+id/scrollView2"
         app:layout_constraintEnd_toEndOf="parent"
@@ -350,7 +40,7 @@
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/app_bar"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_gravity="bottom"
             android:backgroundTint="#f6f6f6"
             app:fabCradleMargin="8dp"
@@ -426,7 +116,7 @@
                         android:id="@+id/textView13"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Home"
+                        android:text="Cart"
                         android:textAlignment="center"
                         android:textColor="#676767"
                         android:textSize="12sp" />
@@ -482,6 +172,7 @@
 
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
 
 
 </LinearLayout>

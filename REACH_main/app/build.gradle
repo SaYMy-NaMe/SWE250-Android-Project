@@ -5,12 +5,12 @@ plugins {
 }
 
 android {
-    compileSdk 32
+    compileSdk 33
 
     defaultConfig {
         applicationId "com.hafiz.reach_main_10"
         minSdk 22
-        targetSdk 32
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 
@@ -46,7 +46,11 @@ dependencies {
     implementation 'com.google.firebase:firebase-storage:20.1.0'
     implementation 'androidx.navigation:navigation-fragment:2.4.1'
     implementation 'androidx.navigation:navigation-ui:2.4.1'
+
+    implementation 'com.google.firebase:firebase-analytics:20.1.2'
+
     implementation 'androidx.lifecycle:lifecycle-livedata-ktx:2.4.1'
+
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.3'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
