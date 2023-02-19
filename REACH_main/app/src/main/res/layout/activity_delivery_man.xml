@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".plumbing_activity"
-    android:background="#163143">
+    android:background="@drawable/delivery">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,8 +18,9 @@
             android:gravity="center"
             android:text="Delivery Man"
             android:textSize="30dp"
+            android:textColor="#080808"
 
-            android:background="@drawable/rectangle"
+            android:background="#78bcfd"
 
             >
 
@@ -30,10 +31,11 @@
             android:gravity="left"
             android:text="Personal Details"
             android:textSize="20dp"
+            android:textColor="#080808"
             android:layout_marginTop="5dp"
             android:padding="10dp"
 
-            android:background="@color/black"
+            android:background="#91a5d9"
 
             >
 
@@ -52,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
+            android:textColor="#080808"
             android:layout_gravity="left"
             android:padding="10dp"
             android:letterSpacing="0.005"

@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".plumbing_activity"
-    android:background="@drawable/fur">
+    android:background="@drawable/laundry">
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/fur"
+        android:background="@drawable/laundry"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4">
 
@@ -23,10 +22,12 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Furniture Assembler"
+                android:text="Laundry  Service"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
                 android:textSize="30dp"
 
-                android:background="#7e4949"
+                android:background="#B2EBF2"
 
                 >
 
@@ -36,11 +37,12 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 android:text="Personal Details"
-                android:textSize="20dp"
+                android:textSize="30dp"
+                android:textColor="#562415"
                 android:layout_marginTop="5dp"
                 android:padding="10dp"
 
-                android:background="#eaafa9"
+                android:background="#E0F2F1"
 
                 >
 
@@ -63,7 +65,7 @@
                 android:layout_gravity="left"
                 android:padding="10dp"
                 android:letterSpacing="0.005"
-                android:text="Name : Ahrafur Rahman\nNID No:6582465\nPermanent Address: Arakan ,Myanmar\nPresent Address : Kin Bridge er nicher Bosti , Sylhet\nExpertise: Furniture assembling\nRatings : 5 star\nCharge :500 taka per hour\nAvailablity: Yes"
+                android:text="Name : Ashrafur Rahman\nNID No:6582465\nPermanent Address: Arakan ,Myanmar\nPresent Address : Kin Bridge er nicher Bosti , Sylhet\nExpertise:Laundry\nRatings : 5 star\nCharge :900 taka per hour\nAvailablity: Yes"
 
                 >
 
