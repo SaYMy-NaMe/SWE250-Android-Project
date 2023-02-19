@@ -33,7 +33,7 @@
                 android:layout_height="35dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="5dp"
-                android:background="@color/darkgreen"
+                android:background="@color/colorPrimary"
                 android:gravity="center"
                 android:text="Car Repairing"
                 android:textColor="#F11212"
