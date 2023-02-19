@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "209083794151",
+    "firebase_url": "https://reach-auth-b96b9-default-rtdb.firebaseio.com",
     "project_id": "reach-auth-b96b9",
     "storage_bucket": "reach-auth-b96b9.appspot.com"
   },
@@ -13,6 +14,14 @@
         }
       },
       "oauth_client": [
+        {
+          "client_id": "209083794151-mpgc0ernku7ln4lj4nf6up017o63klrd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hafiz.reach_main_10",
+            "certificate_hash": "855c53df5bc571449c676d719cd8becafd515725"
+          }
+        },
         {
           "client_id": "209083794151-r0aubv5vk83rbs1fodjam666rtelkgn0.apps.googleusercontent.com",
           "client_type": 3
