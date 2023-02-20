@@ -148,8 +148,12 @@ public class homepage_activity extends AppCompatActivity {
                         switch (position)
                         {
                             case 0:
-                                Intent intent = new Intent(homepage_activity.this,CarWash.class);
+                                Intent intent = new Intent(homepage_activity.this,car_repairing_activity.class);
                                 startActivity(intent);
+                                break;
+                            case 1:
+
+                                startActivity(new Intent(homepage_activity.this,CarWash.class));
                                 break;
                             default:
 

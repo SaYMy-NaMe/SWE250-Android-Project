@@ -21,13 +21,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".LaundryServiceConfirmActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".InteriorDecorationConfirmActivity"
             android:exported="false">
             <meta-data
@@ -50,20 +43,6 @@
         </activity>
         <activity
             android:name=".GardenerConfirmActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".GarageorganizerConfirmActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".FurnitureAssemblerConfirmActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -98,28 +77,7 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".BabysiitConfirmActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".CartListActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".LaundryServiceActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".BabysitterActivity"
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"
@@ -196,13 +154,6 @@
                 android:value="" />
         </activity>
         <activity
-            android:name=".FurnitureAssemblerActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".GymEquipmentInstallerActivity"
             android:exported="false">
             <meta-data
@@ -216,22 +167,7 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-        <activity
-            android:name=".GarageOrganizerActivity"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Bill_Board_nstaller"
-            android:exported="false"
-            android:label="@string/title_activity_bill_board_nstaller"
-            android:theme="@style/Theme.REACH_main10.NoActionBar">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
+
         <activity
             android:name=".Loader"
             android:exported="false">
