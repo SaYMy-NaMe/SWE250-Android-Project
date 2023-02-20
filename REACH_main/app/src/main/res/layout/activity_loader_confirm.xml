@@ -67,7 +67,7 @@
                 android:layout_gravity="left"
                 android:padding="10dp"
                 android:letterSpacing="0.005"
-                android:text="Service             : Laundry Service\n                           Per hour X $500         "
+                android:text="Service             : Loader\n                           Per hour X $500         "
 
 
                 >
