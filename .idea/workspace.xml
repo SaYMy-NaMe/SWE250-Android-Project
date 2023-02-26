@@ -5,13 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cd8d3080-08c1-4c15-9dda-0e2cc3ddc909" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/drawable-xxhdpi/bottom_btn1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/drawable-xxhdpi/bottom_btn2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/drawable-xxhdpi/bottom_btn3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/drawable-xxhdpi/bottom_btn4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/drawable-xxhdpi/bottom_btn5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/SWE250-Android-Project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/SWE250-Android-Project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/REACH_main/app/src/main/res/layout/activity_about_us.xml" beforeDir="false" afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/layout/activity_about_us.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/REACH_main/app/src/main/java/com/hafiz/reach_main_10/FirstFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/REACH_main/app/src/main/java/com/hafiz/reach_main_10/SecondFragment.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/REACH_main/app/src/main/res/layout/activity_homepage.xml" beforeDir="false" afterPath="$PROJECT_DIR$/REACH_main/app/src/main/res/layout/activity_homepage.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
