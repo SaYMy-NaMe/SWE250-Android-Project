@@ -11,14 +11,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
-
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Your Profile"
+            android:textColor="#FFFFFF"
             android:textSize="30dp"
-
             android:background="@drawable/rectangle"
 
             >
@@ -42,7 +41,8 @@
             android:layout_gravity="left"
             android:padding="10dp"
             android:letterSpacing="0.005"
-            android:text="Name : Ahrafur Rahman\nNID No:6582465\nPermanent Address: Arakan ,Myanmar\nPresent Address : Kin Bridge er nicher Bosti , Sylhet\nExpertise: Plumbing,Ac Repairing\nRatings : 5 star\nCharge :300 taka per hour\nAvailablity: Yes"
+            android:textColor="#FFFFFF"
+            android:text="Name : Ashrafur Rahman\nNID No:6582465\nPermanent Address: Arakan ,Myanmar\nPresent Address : Kin Bridge er nicher Bosti , Sylhet\nExpertise: Plumbing,Ac Repairing\nRatings : 5 star\nCharge :300 taka per hour\nAvailablity: Yes"
             >
 
         </TextView>
