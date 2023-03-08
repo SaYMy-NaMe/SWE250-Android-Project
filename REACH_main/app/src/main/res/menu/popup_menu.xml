@@ -6,26 +6,14 @@
         android:title="Search"
         android:icon="@drawable/ic_search"
         app:showAsAction="collapseActionView|ifRoom" />
-
-    <item android:id="@+id/profile"
-        android:title="My Profile"
-        >
-
-    </item>
-    <item android:id="@+id/settings"
-        android:title="Settings"
-        >
-
-    </item>
+    
     <item android:id="@+id/history"
         android:title="Purchase History"
         >
 
     </item>
-    <item android:id="@+id/cart"
-        android:title="My Cart"
-        >
-    </item>
+
+
 
     <item android:id="@+id/aboutUs"
         android:title="About US"

@@ -62,12 +62,12 @@ public class homepage_activity extends AppCompatActivity {
     public boolean onOptionsItemSelected(@NonNull MenuItem item) {
 
         int id = item.getItemId();
-        if(id == R.id.profile)
-        {
-            // go to profile
-            startActivity(new Intent(homepage_activity.this, profile_activity.class));
-
-        }
+//        if(id == R.id.profile)
+//        {
+//            // go to profile
+//            startActivity(new Intent(homepage_activity.this, profile_activity.class));
+//
+//        }
         if(id == R.id.aboutUs)
         {
             startActivity(new Intent(homepage_activity.this, aboutUs_activity.class));
