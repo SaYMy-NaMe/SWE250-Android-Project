@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_activity"
+    android:background="@drawable/login4"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--            logo-->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logofinal" />
+
+        <!--            Signup text-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:fontFamily="sans-serif-light"
+            android:text="SIGN UP AS A WORKER"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <!--            FULLNAME INPUT-->
+
+        <EditText
+            android:id="@+id/fullname2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Full Name"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#080808"
+            android:textColorHint="#080808"
+
+            ></EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/nid2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="NID CARD Number"
+            android:includeFontPadding="true"
+            android:inputType="number"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/address2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Permanent Addresss"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            ></EditText>
+
+        <!--             INPUT-->
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/Expertise"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Type your Expertise followed by a comma"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            ></EditText>
+
+        <!--             INPUT-->
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/number2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Contact Number"
+            android:includeFontPadding="true"
+            android:inputType="number"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"></EditText>
+
+        <EditText
+            android:id="@+id/email2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Email"
+            android:includeFontPadding="true"
+            android:inputType="textEmailAddress"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/pass2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Password"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/confirmPass2"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Confirm Password"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+        <EditText
+            android:id="@+id/honesty"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="#FFFFFF"
+            android:hint="Will you be honest to your work? If Yes, Type it"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             SIGNPU BUTTON -->
+
+
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

@@ -14,6 +14,34 @@
         android:theme="@style/Theme.REACH_main10"
         tools:targetApi="31">
         <activity
+            android:name=".SignUpForWorkerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".LoginForWorkerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SelectionCustomerOrWorkerActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".SolarEnergyConsultantConfirmActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".LoaderConfirmActivity"
             android:exported="false">
             <meta-data
@@ -167,7 +195,6 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-
         <activity
             android:name=".Loader"
             android:exported="false">

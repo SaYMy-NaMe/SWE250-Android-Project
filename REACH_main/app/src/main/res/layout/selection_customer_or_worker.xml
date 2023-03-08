@@ -16,25 +16,24 @@
         android:layout_marginTop="100dp"
         android:src="@drawable/logofinal" />
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
-        android:textColor="#ffffff"
-        android:text="WELCOME ! ! !"
-        android:textStyle="italic"
-        android:gravity="center"
-        android:textSize="50dp"
-        />
-
     <Button
-        android:id="@+id/nextbutton"
-        android:layout_marginTop="90dp"
-        android:layout_width="150dp"
+        android:id="@+id/customerbutton"
+        android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:text="Next"
-        />
+        android:layout_marginTop="90dp"
+        android:text="Login as a Worker" />
+
+    <Button
+        android:id="@+id/Workerbutton"
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:text="Login as a Customer" />
+
 
 </LinearLayout>
 
