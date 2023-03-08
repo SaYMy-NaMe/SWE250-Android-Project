@@ -17,7 +17,7 @@
         android:src="@drawable/logofinal" />
 
     <Button
-        android:id="@+id/customerbutton"
+        android:id="@+id/Workerbutton"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -25,7 +25,7 @@
         android:text="Login as a Worker" />
 
     <Button
-        android:id="@+id/Workerbutton"
+        android:id="@+id/customerbutton"
         android:layout_width="215dp"
         android:layout_height="wrap_content"
         android:layout_alignParentRight="true"
@@ -33,6 +33,7 @@
         android:layout_gravity="center"
         android:layout_marginTop="90dp"
         android:text="Login as a Customer" />
+
 
 
 </LinearLayout>

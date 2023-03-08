@@ -17,8 +17,6 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.regex.Pattern;
-
 public class signup_activity extends AppCompatActivity {
 
     private EditText editFUllname, editNID, editAddress, editCont, editEmail, editPass; // Variabels for Taking Input from signup Form
@@ -130,7 +128,7 @@ public class signup_activity extends AppCompatActivity {
                                             }
                                         }
                                     });
-                            startActivity(new Intent(signup_activity.this,login_activity.class));// Advancing to the login Page again after Successful Signup
+                            startActivity(new Intent(signup_activity.this, login_activity_customer.class));// Advancing to the login Page again after Successful Signup
 
                         }
                         else

@@ -21,9 +21,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
-import java.util.PrimitiveIterator;
-
-public class login_activity extends AppCompatActivity {
+public class login_activity_customer extends AppCompatActivity {
 
     private TextView tb ;
     private EditText edtEmail , editPass;// Input
@@ -36,7 +34,7 @@ public class login_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_login);
+        setContentView(R.layout.activity_login_customer);
 
         mAuth = FirebaseAuth.getInstance(); // Firebase Initialization
         tb = findViewById(R.id.GoToSignup);
@@ -50,7 +48,7 @@ public class login_activity extends AppCompatActivity {
         tb.setOnClickListener(new View.OnClickListener() { // If USer do not Have account , Go to Signup Page
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(login_activity.this , signup_activity.class);
+                Intent in = new Intent(login_activity_customer.this , signup_activity.class);
                 startActivity(in);
             }
         });
@@ -100,11 +98,11 @@ public class login_activity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())
                 {
-                    startActivity(new Intent(login_activity.this,homepage_activity.class)); // Login Success , Advance to The Homepage
+                    startActivity(new Intent(login_activity_customer.this,homepage_activity.class)); // Login Success , Advance to The Homepage
                 }
                 else
                 {
-                    Toast.makeText(login_activity.this,"Failed to login , PLease Try again",Toast.LENGTH_LONG).show();
+                    Toast.makeText(login_activity_customer.this,"Failed to login , PLease Try again",Toast.LENGTH_LONG).show();
 
                 }
             }

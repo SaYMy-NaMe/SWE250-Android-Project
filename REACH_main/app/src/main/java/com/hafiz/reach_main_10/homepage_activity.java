@@ -72,6 +72,14 @@ public class homepage_activity extends AppCompatActivity {
         {
             startActivity(new Intent(homepage_activity.this, aboutUs_activity.class));
         }
+        if(id == R.id.history)
+        {
+            startActivity(new Intent(homepage_activity.this, PurchaseHistory_Activity.class));
+        }
+        if(id == R.id.logout)
+        {
+            startActivity(new Intent(homepage_activity.this, welcomeActivity.class));
+        }
         return true;
     }
 
@@ -82,39 +90,46 @@ public class homepage_activity extends AppCompatActivity {
         
         setContentView(R.layout.activity_homepage);
 
+        // MenuBar
+
+    ImageView home = findViewById(R.id.Home_home);
+    ImageView prof = findViewById(R.id.Home_prof);
+    ImageView cart = findViewById(R.id.home_cart);
+    ImageView supp = findViewById(R.id.Home_Supp);
+    ImageView sett = findViewById(R.id.Home_sett);
 
 
+        home.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(homepage_activity.this,homepage_activity.class));
 
-      //  ImageView im1 = findViewById(R.id.plunmbing);
-
-
-
-
-
-//        im1.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent in = new Intent(homepage_activity.this , plumbing_activity.class);
-//                startActivity(in);
-//            }
-//        });
-//                ImageView im2 = findViewById(R.id.carWashing);
-//        im2.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent in =  new Intent(homepage_activity.this , CarWash.class);
-//                startActivity(in);
-//            }
-//        });
-//
-//        ImageView im3 = findViewById(R.id.carRepairing);
-//        im3.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent in = new Intent(homepage_activity.this , car_repairing_activity.class);
-//                startActivity(in);
-//            }
-//        });
+            }
+        });
+        prof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(homepage_activity.this,profile_activity.class));
+            }
+        });
+        cart.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(homepage_activity.this,CartListActivity.class));
+            }
+        });
+        supp.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(homepage_activity.this,Support_activity.class));
+            }
+        });
+        sett.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(homepage_activity.this,Settings_activity.class));
+            }
+        });
 
     //RecycleView
 
@@ -155,6 +170,11 @@ public class homepage_activity extends AppCompatActivity {
 
                                 startActivity(new Intent(homepage_activity.this,CarWash.class));
                                 break;
+                            case 2:
+
+                                startActivity(new Intent(homepage_activity.this,DeliveryMan.class));
+                                break;
+
                             default:
 
 

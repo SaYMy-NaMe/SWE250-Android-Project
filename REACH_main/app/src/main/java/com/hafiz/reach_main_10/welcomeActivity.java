@@ -21,7 +21,7 @@ public class welcomeActivity extends AppCompatActivity {
             public void onClick(View view) {
 //                Intent in = new Intent(welcomeActivity.this , login_activity.class); // Go to Login Page
 //                startActivity(in);
-                Intent in = new Intent(welcomeActivity.this , login_activity.class); // Go to Login Page
+                Intent in = new Intent(welcomeActivity.this , SelectionCustomerOrWorkerActivity.class); // Go to Login Page
                 startActivity(in);
             }
         });
