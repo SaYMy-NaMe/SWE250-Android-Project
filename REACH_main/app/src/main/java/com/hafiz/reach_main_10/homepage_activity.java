@@ -19,6 +19,7 @@ import android.widget.ImageView;
 import android.widget.SearchView;
 import android.widget.Toast;
 
+import com.google.firebase.auth.FirebaseAuth;
 import com.hafiz.reach_main_10.adapters.GigAdapter;
 import com.hafiz.reach_main_10.classes.RecyclerItemClickListener;
 import com.hafiz.reach_main_10.model.GigModel;
@@ -78,6 +79,7 @@ public class homepage_activity extends AppCompatActivity {
         }
         if(id == R.id.logout)
         {
+            FirebaseAuth.getInstance().signOut();
             startActivity(new Intent(homepage_activity.this, welcomeActivity.class));
         }
         return true;

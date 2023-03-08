@@ -27,22 +27,90 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:src="@drawable/ashraf"
 
             >
 
         </ImageView>
-
         <TextView
+            android:id="@+id/Pr_greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:text="  "
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/Pr_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textSize="20dp"
             android:layout_gravity="left"
-            android:padding="10dp"
-            android:letterSpacing="0.005"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
             android:textColor="#FFFFFF"
-            android:text="Name : Ashrafur Rahman\nNID No:6582465\nPermanent Address: Arakan ,Myanmar\nPresent Address : Kin Bridge er nicher Bosti , Sylhet\nExpertise: Plumbing,Ac Repairing\nRatings : 5 star\nCharge :300 taka per hour\nAvailablity: Yes"
+            android:text=" "
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/Pr_Nid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text=" "
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/Pr_Addr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
+            android:textColor="#FFFFFF"
+            android:text=" "
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/Pr_Cont"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
+            android:textColor="#FFFFFF"
+            android:text=" "
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/Pr_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:layout_gravity="left"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+
+            android:textColor="#FFFFFF"
+            android:text=" "
             >
 
         </TextView>
