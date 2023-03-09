@@ -16,7 +16,7 @@ public class CarWash extends AppCompatActivity {
         setContentView(R.layout.activity_car_wash);
 
         Button b = findViewById(R.id.back3);
-        Button b1 = findViewById(R.id.Confirm);
+
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -24,6 +24,8 @@ public class CarWash extends AppCompatActivity {
                 startActivity(in);
             }
         });
+
+        Button b1 = findViewById(R.id.Confirm);
         b1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

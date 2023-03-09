@@ -176,6 +176,30 @@ public class homepage_activity extends AppCompatActivity {
 
                                 startActivity(new Intent(homepage_activity.this,DeliveryMan.class));
                                 break;
+                            case 3:
+                                Intent intent1 = new Intent(homepage_activity.this,ElectricianActivity.class);
+                                startActivity(intent1);
+                                break;
+                            case 4:
+
+                                startActivity(new Intent(homepage_activity.this,InteriorDecoratorActivity.class));
+                                break;
+                            case 5:
+
+                                startActivity(new Intent(homepage_activity.this,PetTrainerActivity.class));
+                                break;
+                            case 6:
+                                Intent intent2 = new Intent(homepage_activity.this,PetTrainerActivity.class);
+                                startActivity(intent2);
+                                break;
+                            case 7:
+
+                                startActivity(new Intent(homepage_activity.this,plumbing_activity.class));
+                                break;
+                            case 8:
+
+                                startActivity(new Intent(homepage_activity.this,PaintAndDrywallRepairerActivity.class));
+                                break;
 
                             default:
 
