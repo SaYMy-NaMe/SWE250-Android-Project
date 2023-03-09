@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Order History"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Order 1 -->
+            <TextView
+                android:id="@+id/order1_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #1234 - Shipped on Feb 15, 2022"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order1_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product 1 x2, Product 2 x1"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order1_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $74.97"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Order 2 -->
+            <TextView
+                android:id="@+id/order2_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #5678 - Delivered on Jan 10, 2022"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order2_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Product 3 x3"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/order2_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Order 3 -->
+            <TextView
+                android:id="@+id/order3_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #9012 - Shipped on Dec 25, 2021"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order3_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/order4_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #9012 - Shipped on Dec 25, 2021"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order4_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/order5_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #9012 - Shipped on Dec 25, 2021"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order5_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/order6_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #9012 - Shipped on Dec 25, 2021"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order6_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/order7_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #9012 - Shipped on Dec 25, 2021"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order7_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+            <TextView
+                android:id="@+id/order8_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Order #9012 - Shipped on Dec 25, 2021"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/order8_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Total: $59.97"
+                android:textSize="16sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@android:color/darker_gray"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
