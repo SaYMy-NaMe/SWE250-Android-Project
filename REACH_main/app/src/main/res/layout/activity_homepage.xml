@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:gravity="bottom"
     android:orientation="vertical"
-    android:background="@drawable/logoback1">
+    android:background="#FFFFFF">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/linearLayout"
@@ -21,7 +21,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Hello Ashraf , What are you looking for?"
-            android:textColor="@color/white"
+            android:textColor="@color/black"
 
             android:textSize="24dp"
             tools:layout_editor_absoluteX="-16dp"
