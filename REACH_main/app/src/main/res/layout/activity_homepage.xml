@@ -20,7 +20,8 @@
             android:paddingLeft="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Hello Ashraf , What are you looking for?"
+            android:text=" "
+            style="@style/TextAppearance.Material3.BodyLarge"
             android:textColor="@color/black"
 
             android:textSize="24dp"

@@ -34,7 +34,6 @@ public class GardenerActivity extends AppCompatActivity {
         });
         //MenuBar
 
-
         ImageView home = findViewById(R.id.Home_home);
         ImageView prof = findViewById(R.id.Home_prof);
         ImageView cart = findViewById(R.id.home_cart);

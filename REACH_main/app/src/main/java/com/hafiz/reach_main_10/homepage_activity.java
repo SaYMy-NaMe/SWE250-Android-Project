@@ -17,9 +17,16 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.SearchView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.hafiz.reach_main_10.adapters.GigAdapter;
 import com.hafiz.reach_main_10.classes.RecyclerItemClickListener;
 import com.hafiz.reach_main_10.model.GigModel;
@@ -29,10 +36,17 @@ import java.util.logging.Logger;
 
 public class homepage_activity extends AppCompatActivity {
 
+    //Firebase
+    private FirebaseUser user;
+    private DatabaseReference reference;
+    private  String userID;
+
     RecyclerView recyclerView ;
     // For Option menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
+
+
 
         // for Menu Option
 
@@ -75,7 +89,7 @@ public class homepage_activity extends AppCompatActivity {
         }
         if(id == R.id.history)
         {
-            startActivity(new Intent(homepage_activity.this, PurchaseHistory_Activity.class));
+            startActivity(new Intent(homepage_activity.this, OrderHistoryActivity.class));
         }
         if(id == R.id.logout)
         {
@@ -92,7 +106,34 @@ public class homepage_activity extends AppCompatActivity {
         
         setContentView(R.layout.activity_homepage);
 
-        // MenuBar
+
+        //Get Data from Firebase for initial Greetings with UsserName!!
+
+        user = FirebaseAuth.getInstance().getCurrentUser();
+        reference = FirebaseDatabase.getInstance().getReference("Users");
+        userID = user.getUid();
+        final TextView greeting = (TextView) findViewById(R.id.text1);
+
+        reference.child(userID).addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                User userProfile = snapshot.getValue(User.class);
+
+                if(userProfile != null) {
+                    String fullname = userProfile.fullname;
+                    greeting.setText("Hi!"+fullname + "! , What Are You Looking For?");
+
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+                Toast.makeText(homepage_activity.this,"Something Wrong",Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+        // NavigationBar
 
     ImageView home = findViewById(R.id.Home_home);
     ImageView prof = findViewById(R.id.Home_prof);
