@@ -41,7 +41,7 @@
             android:layout_gravity="left"
             android:layout_marginTop="20dp"
             android:textColor="#FFFFFF"
-            android:text=" "
+            android:text="Hello Mr Tomuk"
             >
 
         </TextView>
