@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".HomepageForWorkerActivity">
+
+    <LinearLayout
+
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:background="@drawable/rectangle"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/worker_SeeProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See Profile ">
+
+        </Button>
+
+        <Button
+            android:id="@+id/worker_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Message">
+
+        </Button>
+
+        <Button
+            android:id="@+id/worker_postJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Post a New Job ">
+
+        </Button>
+
+        <Button
+            android:id="@+id/worker_deleteJob"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete a Job ">
+
+        </Button>
+        <Button
+            android:id="@+id/worker_editProfile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit Profile "
+            >
+
+        </Button>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
