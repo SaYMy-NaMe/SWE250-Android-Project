@@ -96,7 +96,7 @@ public class LoginForWorkerActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if(task.isSuccessful())
                 {
-                    startActivity(new Intent(LoginForWorkerActivity.this,homepage_activity.class)); // Login Success , Advance to The Homepage
+                    startActivity(new Intent(LoginForWorkerActivity.this,HomepageForWorkerActivity.class)); // Login Success , Advance to The Homepage
                 }
                 else
                 {
