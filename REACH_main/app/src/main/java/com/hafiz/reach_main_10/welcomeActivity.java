@@ -19,7 +19,9 @@ public class welcomeActivity extends AppCompatActivity {
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent in = new Intent(welcomeActivity.this , login_activity.class); // Go to Login Page
+//                Intent in = new Intent(welcomeActivity.this , login_activity.class); // Go to Login Page
+//                startActivity(in);
+                Intent in = new Intent(welcomeActivity.this , homepage_activity.class); // Go to Login Page
                 startActivity(in);
             }
         });
