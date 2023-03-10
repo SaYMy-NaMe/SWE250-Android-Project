@@ -7,18 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class InteriorDecorationConfirmActivity extends AppCompatActivity {
+public class PaintAndDryWallRepairConfirmActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_interior_decoration_confirm);
+        setContentView(R.layout.activity_paint_and_dry_wall_repair_confirm);
 
         Button b = findViewById(R.id.back4);
         b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(InteriorDecorationConfirmActivity.this,InteriorDecoratorActivity.class));
+                startActivity(new Intent(PaintAndDryWallRepairConfirmActivity.this,PaintAndDrywallRepairerActivity.class));
             }
         });
     }
