@@ -10,7 +10,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
         <TextView
             android:layout_width="wrap_content"
@@ -63,15 +64,7 @@
                 android:layout_weight="1"
                 android:src="@drawable/garden3" />
 
-            <Button
-                android:id="@+id/back2"
-                android:layout_width="130dp"
-                android:layout_height="79dp"
-                android:layout_margin="2dp"
-                android:text="back"></Button>
-
         </LinearLayout>
-
     </LinearLayout>
 
 </LinearLayout>
