@@ -62,8 +62,7 @@ public class GigAdapter extends RecyclerView.Adapter<GigAdapter.viewholder> {
         public viewholder(@NonNull View itemView) {
             super(itemView);
 
-            imageView = itemView.findViewById(R.id.imageView);
-            textView = itemView.findViewById(R.id.textView);
+
 
         }
     }
