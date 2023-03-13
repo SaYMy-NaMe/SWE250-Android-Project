@@ -261,14 +261,14 @@
                 android:name="android.app.lib_name"
                 android:value="" />
         </activity>
-<<<<<<< HEAD
 
 
 
 
 
-=======
->>>>>>> 1695501efceabf79ed05cd5534ee4fb03d11eef3
+
+
+
         <activity
             android:name=".Loader"
             android:exported="false">
