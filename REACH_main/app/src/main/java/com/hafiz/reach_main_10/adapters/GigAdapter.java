@@ -97,6 +97,7 @@ public class GigAdapter extends RecyclerView.Adapter<GigAdapter.viewholder> {
 //            NID= itemView.findViewById(R.id.Sample_nid);
 //            PrmAdress = itemView.findViewById(R.id.Sample_adrr);
 //            CntNo = itemView.findViewById(R.id.Sample_cont);
+
         }
     }
 }

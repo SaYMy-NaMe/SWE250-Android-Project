@@ -203,6 +203,7 @@ public class homepage_activity extends AppCompatActivity {
                 (this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
                     @Override
                     public void onItemClick(View view, int position) {
+
                         switch (position)
                         {
                             case 0:

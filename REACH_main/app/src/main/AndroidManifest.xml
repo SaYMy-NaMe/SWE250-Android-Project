@@ -42,6 +42,15 @@
                 android:value="" />
         </activity>
         <activity
+            android:name=".HomepageForWorkerActivity"
+            android:exported="false"
+            android:label="@string/title_activity_signupforworker_dummy"
+            android:theme="@style/Theme.REACH_main10.NoActionBar">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
             android:name=".LoginDummyActivity"
             android:exported="false">
             <meta-data

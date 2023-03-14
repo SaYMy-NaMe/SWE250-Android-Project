@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".plumbing_activity"
-    android:background="#163143">
+    tools:context=".profile_activity"
+    android:background="@color/white">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,23 +16,14 @@
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="Your Profile"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/purple_500"
             android:textSize="30dp"
-            android:background="@drawable/rectangle"
+            android:background="@color/blueish"
 
             >
 
         </TextView>
 
-
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:src="@drawable/ashraf"
-
-            >
-
-        </ImageView>
         <TextView
             android:id="@+id/Pr_greeting"
             android:layout_width="wrap_content"
@@ -40,7 +31,7 @@
             android:textSize="20sp"
             android:layout_gravity="left"
             android:layout_marginTop="20dp"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/Black"
             android:text="  "
             >
 
@@ -54,7 +45,7 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
 
-            android:textColor="#FFFFFF"
+            android:textColor="@color/Black"
             android:text=" "
             >
 
@@ -67,7 +58,7 @@
             android:layout_gravity="left"
             android:layout_marginTop="20dp"
             android:textStyle="bold"
-            android:textColor="#FFFFFF"
+            android:textColor="@color/Black"
             android:text=" "
             >
 
@@ -81,7 +72,7 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
 
-            android:textColor="#FFFFFF"
+            android:textColor="@color/Black"
             android:text=" "
             >
 
@@ -95,7 +86,7 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
 
-            android:textColor="#FFFFFF"
+            android:textColor="@color/Black"
             android:text=" "
             >
 
@@ -109,7 +100,7 @@
             android:layout_marginTop="20dp"
             android:textStyle="bold"
 
-            android:textColor="#FFFFFF"
+            android:textColor="@color/Black"
             android:text=" "
             >
 
