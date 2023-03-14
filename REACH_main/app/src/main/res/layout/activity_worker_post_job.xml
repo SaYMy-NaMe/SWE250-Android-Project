@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkerPostJobActivity">
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -18,26 +18,30 @@
             android:padding="10dp"
             >
             <TextView
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textStyle="bold"
                 android:textSize="36sp"
-                android:text="Upload A New JOB!"
+                android:text=" Upload A New JOB!"
                 android:textColor="@color/Red"
                 android:gravity="center"
                 android:layout_margin="10dp"
                 />
             <TextView
+
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Job Ttile"
                 />
             <com.google.android.material.textfield.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post_title"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -46,16 +50,19 @@
             </com.google.android.material.textfield.TextInputLayout>
 
             <TextView
+
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Fair(Taka)"
                 />
             <com.google.android.material.textfield.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post_fair"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -65,16 +72,19 @@
 
 
             <TextView
+
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Interested Area"
                 />
             <com.google.android.material.textfield.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post_area"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -84,16 +94,19 @@
 
 
             <TextView
+
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="NID NO"
                 />
             <com.google.android.material.textfield.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post_NID"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -103,16 +116,40 @@
 
 
             <TextView
+
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Permanent Adrress"
                 />
             <com.google.android.material.textfield.TextInputLayout
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
                 <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post_prmAdrress"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Contact No"
+                />
+            <com.google.android.material.textfield.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post_cntNo"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -122,54 +159,37 @@
 
             <TextView
                 android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Contact No"
+                android:text="Upload Your Image"
                 />
-            <com.google.android.material.textfield.TextInputLayout
+            <ImageView
+                android:id="@+id/uploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/uploadimageicon"
+                />
+
+
+
+            <RelativeLayout
+                android:id="@+id/UpldImageRelative"
+                android:layout_margin="10dp"
+                android:visibility="gone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 >
-                <com.google.android.material.textfield.TextInputEditText
+                <ImageView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    />
-
-            </com.google.android.material.textfield.TextInputLayout>
-
-          <TextView
-              android:layout_marginTop="20dp"
-              android:layout_marginBottom="10dp"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="Upload Your Image"
-              />
-          <ImageView
-              android:id="@+id/uploadBtn"
-              android:layout_width="match_parent"
-              android:layout_height="200dp"
-              android:src="@drawable/uploadimageicon"
-              />
+                    android:layout_height="200dp"
+                    android:id="@+id/JobImage"/>
 
 
-
-          <RelativeLayout
-              android:id="@+id/UpldImageRelative"
-              android:layout_margin="10dp"
-              android:visibility="gone"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              >
-              <ImageView
-                  android:layout_width="match_parent"
-                  android:layout_height="200dp"
-                  android:id="@+id/JobImage"/>
-
-
-          </RelativeLayout>
+            </RelativeLayout>
 
             <Button
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/post"
@@ -179,9 +199,7 @@
 
             </Button>
         </LinearLayout>
-        
+
     </RelativeLayout>
-    
-    
-   
+
 </ScrollView>

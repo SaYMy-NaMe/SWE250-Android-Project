@@ -7,6 +7,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import com.google.firebase.auth.FirebaseAuth;
+
 public class HomepageForWorkerActivity extends AppCompatActivity {
 
     @Override
@@ -20,10 +22,21 @@ public class HomepageForWorkerActivity extends AppCompatActivity {
         Button workerDeleteJob = findViewById(R.id.worker_postJob);
         Button workerEditProfile = findViewById(R.id.worker_editProfile);
 
+        Button workerLogout= findViewById(R.id.worker_logout);
+
+
         workerPostJob.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 startActivity(new Intent(HomepageForWorkerActivity.this,WorkerPostJobActivity.class));
+
+            }
+        });
+        workerLogout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                FirebaseAuth.getInstance().signOut();
+                startActivity(new Intent(HomepageForWorkerActivity.this,LoginForWorkerActivity.class));
 
             }
         });

@@ -2,6 +2,7 @@ package com.hafiz.reach_main_10;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -27,9 +28,11 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
 import com.hafiz.reach_main_10.adapters.GigAdapter;
 import com.hafiz.reach_main_10.classes.RecyclerItemClickListener;
 import com.hafiz.reach_main_10.model.GigModel;
+import com.hafiz.reach_main_10.model.PostModel;
 
 import java.util.ArrayList;
 import java.util.logging.Logger;
@@ -39,9 +42,18 @@ public class homepage_activity extends AppCompatActivity {
     //Firebase
     private FirebaseUser user;
     private DatabaseReference reference;
+    private FirebaseDatabase database;
+    private FirebaseStorage firebaseStorage;
     private  String userID;
+    GigAdapter recycleAdapter;
 
     RecyclerView recyclerView ;
+    ArrayList<PostModel> recyclelist;
+
+
+
+
+
     // For Option menu
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -103,7 +115,7 @@ public class homepage_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        
+
         setContentView(R.layout.activity_homepage);
 
 
@@ -121,7 +133,7 @@ public class homepage_activity extends AppCompatActivity {
 
                 if(userProfile != null) {
                     String fullname = userProfile.fullname;
-                    greeting.setText("Hi!"+fullname + "! , What Are You Looking For?");
+                    greeting.setText("Hi!"+fullname + "! What Are You Looking For?");
 
                 }
             }
@@ -135,11 +147,11 @@ public class homepage_activity extends AppCompatActivity {
 
         // NavigationBar
 
-    ImageView home = findViewById(R.id.Home_home);
-    ImageView prof = findViewById(R.id.Home_prof);
-    ImageView cart = findViewById(R.id.home_cart);
-    ImageView supp = findViewById(R.id.Home_Supp);
-    ImageView sett = findViewById(R.id.Home_sett);
+        ImageView home = findViewById(R.id.Home_home);
+        ImageView prof = findViewById(R.id.Home_prof);
+        ImageView cart = findViewById(R.id.home_cart);
+        ImageView supp = findViewById(R.id.Home_Supp);
+        ImageView sett = findViewById(R.id.Home_sett);
 
 
         home.setOnClickListener(new View.OnClickListener() {
@@ -174,90 +186,106 @@ public class homepage_activity extends AppCompatActivity {
             }
         });
 
-    //RecycleView
+        //RecycleView
+//        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
+//        recyclerView.setLayoutManager(gridLayoutManager);
 
+        recyclelist = new ArrayList<>();
         recyclerView = findViewById(R.id.recycleView);
-        ArrayList<GigModel> list = new ArrayList<>();
-        list.add(new GigModel(R.drawable.car_repairing,"Car Repairing"));
-        list.add(new GigModel(R.drawable.car_washer,"Car Washer"));
-        list.add(new GigModel(R.drawable.delivery_man,"Delivery Man"));
-        list.add(new GigModel(R.drawable.electrician,"Electrician"));
-        list.add(new GigModel(R.drawable.garden3,"Gardener"));
-        list.add(new GigModel(R.drawable.interior,"Interior Designer"));
-        list.add(new GigModel(R.drawable.pet3,"Pet Trainer"));
-        list.add(new GigModel(R.drawable.plumber,"Plumbing "));
-        list.add(new GigModel(R.drawable.paint2,"Painter"));
 
+        database = FirebaseDatabase.getInstance();
+        recycleAdapter = new GigAdapter(recyclelist,getApplicationContext());
 
-        GigAdapter adapter = new GigAdapter(list,this);
-        recyclerView.setAdapter(adapter);
-
-//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.HORIZONTAL,true);
+//        LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,true);
 //        recyclerView.setLayoutManager(linearLayoutManager);
+//        recyclerView.addItemDecoration(new DividerItemDecoration(recyclerView.getContext(),DividerItemDecoration.VERTICAL));
+        //recyclerView.setNestedScrollingEnabled(false);
+
         GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
         recyclerView.setLayoutManager(gridLayoutManager);
 
+        recyclerView.setAdapter(recycleAdapter);
+
+        database.getReference().child("Jobs").addListenerForSingleValueEvent(new ValueEventListener() {
+
+            @Override
+
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for(DataSnapshot dataSnapshot : snapshot.getChildren()) {
+                    PostModel postModel = dataSnapshot.getValue(PostModel.class);
+                    recyclelist.add(postModel);
+                }
+                recycleAdapter.notifyDataSetChanged();
+            }
+
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
         //RecycleItemclickListener
 
-        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener
-                (this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
-                    @Override
-                    public void onItemClick(View view, int position) {
+//        recyclerView.addOnItemTouchListener(new RecyclerItemClickListener
+//                (this, recyclerView, new RecyclerItemClickListener.OnItemClickListener() {
+//                    @Override
+//                    public void onItemClick(View view, int position) {
+//
+//                        switch (position)
+//                        {
+//                            case 0:
+//                                Intent intent = new Intent(homepage_activity.this,car_repairing_activity.class);
+//                                startActivity(intent);
+//                                break;
+//                            case 1:
+//
+//                                startActivity(new Intent(homepage_activity.this,CarWash.class));
+//                                break;
+//                            case 2:
+//
+//                                startActivity(new Intent(homepage_activity.this,DeliveryMan.class));
+//                                break;
+//                            case 3:
+//                                Intent intent1 = new Intent(homepage_activity.this,ElectricianActivity.class);
+//                                startActivity(intent1);
+//                                break;
+//                            case 4:
+//
+//                                startActivity(new Intent(homepage_activity.this,InteriorDecoratorActivity.class));
+//                                break;
+//                            case 5:
+//
+//                                startActivity(new Intent(homepage_activity.this,PetTrainerActivity.class));
+//                                break;
+//                            case 6:
+//                                Intent intent2 = new Intent(homepage_activity.this,PetTrainerActivity.class);
+//                                startActivity(intent2);
+//                                break;
+//                            case 7:
+//
+//                                startActivity(new Intent(homepage_activity.this,plumbing_activity.class));
+//                                break;
+//                            case 8:
+//
+//                                startActivity(new Intent(homepage_activity.this,PaintAndDrywallRepairerActivity.class));
+//                                break;
+//
+//                            default:
+//
+//
+//                        }
+//                    }
+//
+//                    @Override
+//                    public void onLongItemClick(View view, int position) {
+//
+//                    }
+//                }
+//
+//
+//                ));
 
-                        switch (position)
-                        {
-                            case 0:
-                                Intent intent = new Intent(homepage_activity.this,car_repairing_activity.class);
-                                startActivity(intent);
-                                break;
-                            case 1:
-
-                                startActivity(new Intent(homepage_activity.this,CarWash.class));
-                                break;
-                            case 2:
-
-                                startActivity(new Intent(homepage_activity.this,DeliveryMan.class));
-                                break;
-                            case 3:
-                                Intent intent1 = new Intent(homepage_activity.this,ElectricianActivity.class);
-                                startActivity(intent1);
-                                break;
-                            case 4:
-
-                                startActivity(new Intent(homepage_activity.this,InteriorDecoratorActivity.class));
-                                break;
-                            case 5:
-
-                                startActivity(new Intent(homepage_activity.this,PetTrainerActivity.class));
-                                break;
-                            case 6:
-                                Intent intent2 = new Intent(homepage_activity.this,PetTrainerActivity.class);
-                                startActivity(intent2);
-                                break;
-                            case 7:
-
-                                startActivity(new Intent(homepage_activity.this,plumbing_activity.class));
-                                break;
-                            case 8:
-
-                                startActivity(new Intent(homepage_activity.this,PaintAndDrywallRepairerActivity.class));
-                                break;
-
-                            default:
-
-
-                        }
-                    }
-
-                    @Override
-                    public void onLongItemClick(View view, int position) {
-
-                    }
-                }
-
-
-                ));
-        
         //Recycle View
     }
 }
