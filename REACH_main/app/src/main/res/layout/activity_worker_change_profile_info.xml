@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login_activity_customer"
+    android:background="@drawable/login4"
+
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!--            logo-->
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:paddingTop="15dp"
+            android:paddingBottom="20dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/logofinal" />
+
+        <!--            Signup text-->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:fontFamily="sans-serif-light"
+            android:text="SIGN UP"
+            android:textColor="#141414"
+            android:textSize="25dp">
+
+        </TextView>
+
+        <!--            FULLNAME INPUT-->
+
+        <EditText
+            android:id="@+id/fullname"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Change Name"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#080808"
+            android:textColorHint="#080808"
+
+            ></EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/nid"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Change NID CARD Number"
+            android:includeFontPadding="true"
+            android:inputType="number"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/address"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Change Permanent Addresss"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            ></EditText>
+
+        <!--             INPUT-->
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/caddress"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Change Currently Available Addresss"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            ></EditText>
+
+        <!--             INPUT-->
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/number"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Change Contact Number"
+            android:includeFontPadding="true"
+            android:inputType="number"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"></EditText>
+
+
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Change Password"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             INPUT-->
+
+        <EditText
+            android:id="@+id/confirmPass"
+            android:layout_width="388dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="#FFFFFF"
+            android:hint="Confirm New Password"
+            android:includeFontPadding="true"
+            android:inputType="text"
+            android:padding="3dp"
+            android:textColor="#37196E"
+            android:textColorHint="#080808"
+            >
+
+        </EditText>
+
+        <!--             SIGNPU BUTTON -->
+
+
+
+        <Button
+            android:id="@+id/signup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SUbmit"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            >
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+</ScrollView>

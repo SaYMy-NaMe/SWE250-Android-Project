@@ -5,9 +5,12 @@ public class GigModel {
     int pic ;
     String text;
 
+
     public GigModel(int pic, String text) {
         this.pic = pic;
         this.text = text;
+
+
     }
 
     public int getPic() {
@@ -25,4 +28,5 @@ public class GigModel {
     public void setText(String text) {
         this.text = text;
     }
+
 }

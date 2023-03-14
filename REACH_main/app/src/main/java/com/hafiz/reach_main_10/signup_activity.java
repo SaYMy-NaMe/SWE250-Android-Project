@@ -119,12 +119,12 @@ public class signup_activity extends AppCompatActivity {
                                         public void onComplete(@NonNull Task<Void> task) {
                                             if(!task.isSuccessful())
                                             {
-                                                Toast.makeText(signup_activity.this, "Signup Scuccesfull",Toast.LENGTH_LONG).show();// Giving Signup Success Full Messaage
+                                                Toast.makeText(signup_activity.this, "Signup Failed,Try Again",Toast.LENGTH_LONG).show();// Giving Signup Success Full Messaage
 
                                             }
                                             else
                                             {
-                                                Toast.makeText(signup_activity.this, "Signup Failed,Try Again",Toast.LENGTH_LONG).show();
+                                                Toast.makeText(signup_activity.this, "Signup Scuccesfull ",Toast.LENGTH_LONG).show();
                                             }
                                         }
                                     });
