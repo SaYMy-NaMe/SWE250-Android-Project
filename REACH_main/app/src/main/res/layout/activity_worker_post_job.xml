@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".WorkerPostJobActivity">
-    
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -129,6 +129,7 @@
                 >
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/post_prmAdrress"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -150,6 +151,7 @@
                 >
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/post_cntNo"
+
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
@@ -157,39 +159,42 @@
 
             </com.google.android.material.textfield.TextInputLayout>
 
-          <TextView
-              android:layout_marginTop="20dp"
-              android:layout_marginBottom="10dp"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="Upload Your Image"
-              />
-          <ImageView
-              android:id="@+id/uploadBtn"
-              android:layout_width="match_parent"
-              android:layout_height="200dp"
-              android:src="@drawable/uploadimageicon"
-              />
+            <TextView
+
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Upload Your Image"
+                />
+
+
+            <ImageView
+                android:id="@+id/uploadBtn"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/uploadimageicon"
+                />
 
 
 
-          <RelativeLayout
-              android:id="@+id/UpldImageRelative"
-              android:layout_margin="10dp"
-              android:visibility="gone"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              >
-              <ImageView
-                  android:layout_width="match_parent"
-                  android:layout_height="200dp"
-                  android:id="@+id/JobImage"/>
+            <RelativeLayout
+                android:id="@+id/UpldImageRelative"
+                android:layout_margin="10dp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+                <ImageView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:id="@+id/JobImage"/>
 
 
-          </RelativeLayout>
+            </RelativeLayout>
 
             <Button
-                
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/post"
@@ -199,9 +204,7 @@
 
             </Button>
         </LinearLayout>
-        
+
     </RelativeLayout>
-    
-    
-   
+
 </ScrollView>

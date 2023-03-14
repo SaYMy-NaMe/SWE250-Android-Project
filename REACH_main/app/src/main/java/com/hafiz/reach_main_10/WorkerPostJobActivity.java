@@ -63,7 +63,13 @@ public class WorkerPostJobActivity extends AppCompatActivity {
 
 
 
-
+        // Progress Dialogue
+        dialog = new ProgressDialog(this);
+        dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+        dialog.setMessage("Please Wait");
+        dialog.setCancelable(false);
+        dialog.setTitle("Poasting New Job");
+        dialog.setCanceledOnTouchOutside(false);
 
 
         postTitle = findViewById(R.id.post_title);

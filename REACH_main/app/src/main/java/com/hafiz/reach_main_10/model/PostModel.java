@@ -5,6 +5,7 @@ public class PostModel
     private  String postTitle,fair,area,NID , PrmAdress,CntNo;
      String productImage;
 
+
     public PostModel() {
 
     }

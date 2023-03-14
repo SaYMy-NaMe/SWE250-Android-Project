@@ -34,7 +34,7 @@ public class GigAdapter extends RecyclerView.Adapter<GigAdapter.viewholder> {
     @Override
     public viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-       View view = LayoutInflater.from(context).inflate(R.layout.sample_recycler_view,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.sample_recycler_view,parent,false);
         return new viewholder(view);
 
     }

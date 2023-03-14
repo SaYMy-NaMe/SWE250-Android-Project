@@ -34,6 +34,7 @@
                 android:value="" />
         </activity>
         <activity
+
             android:name=".JobDetailActivity"
             android:exported="false">
             <meta-data
@@ -41,7 +42,25 @@
                 android:value="" />
         </activity>
         <activity
+
             android:name=".WorkerPostJobActivity"
+
+
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkerEditProfileActivity"
+            android:exported="false">
+            <meta-data
+                android:name="android.app.lib_name"
+                android:value="" />
+        </activity>
+        <activity
+            android:name=".WorkerChangeProfileInfoActivity"
+
             android:exported="false">
             <meta-data
                 android:name="android.app.lib_name"

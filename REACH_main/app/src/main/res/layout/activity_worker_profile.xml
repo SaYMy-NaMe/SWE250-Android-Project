@@ -41,9 +41,14 @@
             android:layout_height="wrap_content"
             android:layout_gravity="left"
             android:layout_marginTop="20dp"
-            android:text="Hello Mr Tomuk"
+            android:text=""
+
+            android:textSize="20sp"
+
             android:textColor="#FFFFFF"
-            android:textSize="20sp">
+
+            >
+
 
         </TextView>
 

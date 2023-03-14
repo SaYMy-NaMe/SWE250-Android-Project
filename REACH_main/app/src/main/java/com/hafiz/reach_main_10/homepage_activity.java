@@ -115,7 +115,7 @@ public class homepage_activity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        
+
         setContentView(R.layout.activity_homepage);
 
 
@@ -147,11 +147,11 @@ public class homepage_activity extends AppCompatActivity {
 
         // NavigationBar
 
-    ImageView home = findViewById(R.id.Home_home);
-    ImageView prof = findViewById(R.id.Home_prof);
-    ImageView cart = findViewById(R.id.home_cart);
-    ImageView supp = findViewById(R.id.Home_Supp);
-    ImageView sett = findViewById(R.id.Home_sett);
+        ImageView home = findViewById(R.id.Home_home);
+        ImageView prof = findViewById(R.id.Home_prof);
+        ImageView cart = findViewById(R.id.home_cart);
+        ImageView supp = findViewById(R.id.Home_Supp);
+        ImageView sett = findViewById(R.id.Home_sett);
 
 
         home.setOnClickListener(new View.OnClickListener() {
@@ -186,7 +186,11 @@ public class homepage_activity extends AppCompatActivity {
             }
         });
 
+
     //RecycleView
+
+        //RecycleView
+
 //        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
 //        recyclerView.setLayoutManager(gridLayoutManager);
 
@@ -285,7 +289,7 @@ public class homepage_activity extends AppCompatActivity {
 //
 //
 //                ));
-        
+
         //Recycle View
     }
 }
