@@ -47,6 +47,14 @@
 
         </Button>
         <Button
+            android:id="@+id/worker_GoToHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="See Your Post "
+            >
+
+        </Button>
+        <Button
             android:id="@+id/worker_editProfile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

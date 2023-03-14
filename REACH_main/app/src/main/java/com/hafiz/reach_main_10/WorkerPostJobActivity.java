@@ -53,6 +53,16 @@ public class WorkerPostJobActivity extends AppCompatActivity {
         database = FirebaseDatabase.getInstance();
         firebaseStorage = FirebaseStorage.getInstance();
 
+      // Progress Dialogue
+      dialog = new ProgressDialog(this);
+      dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
+      dialog.setMessage("Please Wait");
+      dialog.setCancelable(false);
+      dialog.setTitle("Poasting New Job");
+      dialog.setCanceledOnTouchOutside(false);
+
+
+
         // Progress Dialogue
         dialog = new ProgressDialog(this);
         dialog.setProgressStyle(ProgressDialog.STYLE_SPINNER);
@@ -60,6 +70,7 @@ public class WorkerPostJobActivity extends AppCompatActivity {
         dialog.setCancelable(false);
         dialog.setTitle("Poasting New Job");
         dialog.setCanceledOnTouchOutside(false);
+
 
         postTitle = findViewById(R.id.post_title);
         fair = findViewById(R.id.post_fair);

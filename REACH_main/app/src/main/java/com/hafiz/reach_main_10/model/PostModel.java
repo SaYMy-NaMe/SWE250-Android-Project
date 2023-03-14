@@ -3,7 +3,8 @@ package com.hafiz.reach_main_10.model;
 public class PostModel
 {
     private  String postTitle,fair,area,NID , PrmAdress,CntNo;
-    String productImage;
+     String productImage;
+
 
     public PostModel() {
 

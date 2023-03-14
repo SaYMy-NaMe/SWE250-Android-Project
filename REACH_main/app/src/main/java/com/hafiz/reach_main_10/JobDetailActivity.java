@@ -66,5 +66,6 @@ public class JobDetailActivity extends AppCompatActivity {
 
 
 
+
     }
 }

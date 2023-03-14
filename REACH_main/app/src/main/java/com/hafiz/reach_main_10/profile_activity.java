@@ -62,7 +62,7 @@ public class profile_activity extends AppCompatActivity {
                      String cont = userProfile.contact;
                      String email = userProfile.email;
 
-                     greeting.setText("   Hi!,"+fullname + "!");
+                     greeting.setText("   Hi! "+fullname + "!");
                      name.setText(" Name : "+fullname);
                      addr.setText(" Address : "+adr);
                      nID.setText(" NID No : "+NID);

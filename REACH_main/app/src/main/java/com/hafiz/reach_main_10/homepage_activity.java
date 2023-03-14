@@ -186,7 +186,11 @@ public class homepage_activity extends AppCompatActivity {
             }
         });
 
+
+    //RecycleView
+
         //RecycleView
+
 //        GridLayoutManager gridLayoutManager = new GridLayoutManager(this,3);
 //        recyclerView.setLayoutManager(gridLayoutManager);
 
