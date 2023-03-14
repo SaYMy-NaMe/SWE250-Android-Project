@@ -12,7 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="75dp"
-        android:background="@drawable/rectangle"
+        android:background="@drawable/logoback2"
         android:orientation="vertical">
 
         <Button
