@@ -66,9 +66,9 @@
             android:padding="16dp">
 
             <ImageView
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:src="@drawable/ashraf"/>
+                android:layout_width="86dp"
+                android:layout_height="89dp"
+                android:src="@drawable/ashraf" />
 
             <TextView
                 android:layout_width="match_parent"
