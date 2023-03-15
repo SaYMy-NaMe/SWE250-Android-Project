@@ -4,17 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/background">
+    android:background="@drawable/background"
+    >
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtUsername"
+        android:id="@+id/emaiL"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="271dp"
         android:layout_height="63dp"
         android:layout_marginStart="70dp"
         android:layout_marginTop="250dp"
         android:layout_marginEnd="70dp"
-        android:hint="Username"
+        android:hint="Email"
         android:textColorHint="#A7A7A7"
         app:boxStrokeColor="#EAEAEE"
         app:layout_constraintEnd_toEndOf="parent"
@@ -22,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputUsername"
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:textColor="#5B5B5B"
@@ -32,7 +33,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/txtPassword"
+
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
         android:layout_width="271dp"
         android:layout_height="63dp"
@@ -48,7 +49,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:id="@+id/inputPassword"
+            android:id="@+id/pasS"
             android:layout_width="match_parent"
             android:layout_height="55dp"
             android:textColor="#5B5B5B"
@@ -58,7 +59,7 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button4"
+        android:id="@+id/lo"
         android:layout_width="271dp"
         android:layout_height="55dp"
         android:layout_marginTop="200dp"
@@ -69,15 +70,16 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.542"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.447" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="139dp"
         android:layout_height="15dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="283dp"
         android:text="Don't have account?"
         android:textColor="#A7A7A7"
@@ -85,22 +87,22 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        tools:layout_editor_absoluteY="479dp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/GoToSignup"
         android:layout_width="135dp"
         android:layout_height="16dp"
         android:layout_marginStart="7dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="68dp"
         android:text="Create a new account"
         android:textColor="#3BA8BE"
         android:textSize="12sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        app:layout_constraintTop_toBottomOf="@+id/button4" />
+        tools:layout_editor_absoluteY="479dp" />
 
     <ImageView
         android:layout_width="303dp"
@@ -120,9 +122,9 @@
         android:layout_marginEnd="70dp"
         android:text="Forgot Password?"
         android:textColor="#3BA8BE"
-        app:layout_constraintBottom_toTopOf="@+id/button4"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtPassword" />
+        />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
