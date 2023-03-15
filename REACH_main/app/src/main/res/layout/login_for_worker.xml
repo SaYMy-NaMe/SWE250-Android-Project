@@ -87,7 +87,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="479dp" />
+        tools:layout_editor_absoluteY="479dp"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/GoToSignup"
@@ -102,14 +103,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView4"
-        tools:layout_editor_absoluteY="479dp" />
+        tools:layout_editor_absoluteY="479dp"
+        tools:ignore="MissingConstraints" />
 
     <ImageView
         android:layout_width="303dp"
         android:layout_height="132dp"
         android:src="@drawable/logofinal"
         tools:layout_editor_absoluteX="54dp"
-        tools:layout_editor_absoluteY="78dp">
+        tools:layout_editor_absoluteY="78dp"
+        tools:ignore="MissingConstraints">
 
     </ImageView>
 
@@ -125,6 +128,6 @@
 
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        />
+        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
